@@ -37,8 +37,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'diwani2';
-  src: url('./plugin/fonts/diwani/ArbFONTS-51DW2SUN.ttf');
+  font-family: 'thuluth';
+  src: url('./plugin/fonts/thuluth/arfonts-thuluth-alsmt7017.ttf');
   /* font-weight: normal;
   font-style: normal; */
 }
@@ -231,8 +231,10 @@ header#hero {
 
 
 .title{
-  font-family: 'diwani2' , sans-serif;
-  margin: 1.5rem 0;
+  font-family: 'thuluth' , sans-serif;
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 
@@ -244,14 +246,19 @@ header#hero {
   .book {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: .8rem;
     position: relative;
+    .title{
+      font-size: 2rem;
+    }
     .book-shape{
-      content:"";
       position: absolute;
       top: -2rem;
-      inset-inline-start: 0rem;
+      inset-inline-start: -1.5rem;
       width: 50%;
-      height: 80%;
+      height: 70%;
     }
     .img{
       aspect-ratio: 3 / 4;
@@ -309,7 +316,9 @@ footer{
   color: var(--white);
   padding: 15rem 0 3rem 0;
 }
-
+.footer-logo{
+  margin-bottom: 2rem;
+}
 footer :where(a, p , h3) {
   color: var(--white);
 }
@@ -350,17 +359,23 @@ footer .content ul {
 }
 
 @media (max-width: 625px) {
-  .books 
-    .book 
-        .book-shape {
-            top: -1rem;
-            width: 45%;
-            height: 75%;
-        }
+  .books .book .book-shape {
+    top: -1rem;
+    width: 60%;
+    height: 50%;
+    inset-inline-start: -1rem;
+}
+.books 
+   .book 
+      .title {
+          font-size: 1.3rem;
+          text-align: center !important;
+          width: 100%;
+      }
 
   .books .book .img {
       border-radius: 2rem;
-      width: 95%;
+      width: 90%;
   }
 
 
