@@ -2,6 +2,37 @@
 
 
 $(document).ready(function(){
+
+
+  const qoutes = new Swiper('.qoutes .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    mousewheel: {
+      forceToAxis: true,
+    },
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+
+    // Autoplay settings
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
+    },
+
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+
+
+
     // dir
     var bodyDir = $('body').css('direction')
     var dirAr
@@ -11,6 +42,7 @@ $(document).ready(function(){
     else{
       dirAr = false
     }
+
 
 
     
@@ -30,38 +62,6 @@ $(document).ready(function(){
 
 
 
-
-
-//      play and pause video       //
-
-
-let play = document.getElementById("play");
-let pause = document.getElementById("pause");
-let video = document.getElementById("video");
-let overlay = document.getElementById("overlay");
-
-
-if (play !== null) {
-    
-    pause.style.display = "none";
-
-    
-    play.addEventListener("click", function() {
-        
-        play.style.display = "none";
-        pause.style.display = "flex";
-        overlay.classList.add("active");
-        video.play();
-    });
-
-    pause.addEventListener("click", function() {
-        
-        pause.style.display = "none";
-        play.style.display = "flex";
-        overlay.classList.remove("active");
-        video.pause();
-    });
-}
 
 
 
@@ -89,59 +89,22 @@ if(scrollBtn != null){
 }
 
 
-    const navToggler = document.getElementById("nav-toggler");
-    const collapse = document.querySelector(".navbar-collapse");
-    const close = document.getElementById("close");
+    // const navToggler = document.getElementById("nav-toggler");
+    // const collapse = document.querySelector(".navbar-collapse");
+    // const close = document.getElementById("close");
 
-    close.addEventListener("click" , ()=>{
-      collapse.classList.remove("active")
-    })
+    // close.addEventListener("click" , ()=>{
+    //   collapse.classList.remove("active")
+    // })
 
-    navToggler.addEventListener("click" , ()=>{
-      collapse.classList.toggle("active")
-    })
-
-
+    // navToggler.addEventListener("click" , ()=>{
+    //   collapse.classList.toggle("active")
+    // })
 
 
-    const screensSwiper = new Swiper('.screens .swiper', {
-      slidesPerView: 4,
-      spaceBetween: 40,
-      breakpoints: {
-        320: {
-          slidesPerView: 1.5,
-        },
-        640: {
-          slidesPerView: 2.5,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
-      grid: {
-        rows: 1,
-      },
-      mousewheel: {
-        forceToAxis: true,
-      },
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
 
 
-      // Autoplay settings
-      autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false, 
-      },
 
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-    });
 
 
 
