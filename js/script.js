@@ -18,15 +18,15 @@ $(document).ready(function(){
 
     // Autoplay settings
     autoplay: {
-      delay: 3000, 
+      delay: 5000, 
       disableOnInteraction: false, 
     },
 
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
     },
 
   });

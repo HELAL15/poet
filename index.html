@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
   <!-- animate link  -->
   <link rel="stylesheet" href="styles/plugin/animate.css" />
+  <!-- -- fancy box --  -->
+  <link rel="stylesheet" href="styles/plugin/jquery.fancybox.min.css">
   <!-- swiper link -->
   <!-- swiper link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -49,71 +51,72 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse-navbar">
-          <ul class="navbar-nav  mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                عن الشاعر
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                الأعمال
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                الكتب
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                الاحتلال العراقي
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">التواصل</a>
-            </li>
-          </ul>
+        <div class="d-flex gap-5">
+          <div class="collapse navbar-collapse collapse-navbar" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  عن الشاعر
+                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action </a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  الأعمال
+                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  الكتب
+                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  الاحتلال العراقي
+                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">التواصل</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="lang d-flex align-items-center gap-2">
+            <span>EN</span>
+            <i class="bi bi-globe"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -127,15 +130,26 @@
               <p class="disc">فئق عبدالجليل شاعر كويتي له العديد من الاصدارات الشعرية بالعامية والفصحى وله قصائد غنائية
                 انتشرت على
                 مستوى الوطن العربي</p>
+              <a href="about.html" class="btn main-btn">المزيد</a>
             </div>
           </div>
           <div class="col-md-7 p-0">
             <div class="img video-hero-svg">
-              <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 1153.837 1079.975">
-                <path id="_901b53d7a897aca9fbee48d9bd44ef9c" data-name="901b53d7a897aca9fbee48d9bd44ef9c"
-                  d="M0,0H1090S892.579,122.709,892.579,349.847s267.6,374.628,261.143,558.382c1.444,123.315-63.722,171.745-63.722,171.745H0Z"
-                  opacity="0.3" />
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="clipPath">
+                    <path
+                      d="M0,0H1090S892.579,122.709,892.579,349.847s267.6,374.628,261.143,558.382c1.444,123.315-63.722,171.745-63.722,171.745H0Z" />
+                  </clipPath>
+                </defs>
               </svg>
+
+              <div class="video-container">
+                <video autoplay muted loop controls>
+                  <source src="images/vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -175,7 +189,7 @@
       <div class="row gy-4 align-items-center">
         <div class="col-md-6 work-img">
           <div class="img">
-            <img src="images/about.jpg" alt="">
+            <img src="images/book2.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
@@ -202,9 +216,19 @@
 
 
   <section class="qoutes">
-    <div class="container">
+    <div class="bg-overlay">
+      <span class="overlay"></span>
+      <img src="images/qoutes.png" alt="">
+    </div>
+
+    <div class="sec-title">
+      <!-- === img style === -->
+      <img src="images/qout-icon.svg" alt="">
+      <h2 class="title">من أقوال الشاعر</h2>
+    </div>
+    <div class="container position-relative">
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiper py-5 mt-5">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -214,8 +238,14 @@
         </div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-buttons">
+          <div class="swiper-prev">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="swiper-next">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -232,7 +262,7 @@
         به النقاد والجمهور على حد سواء، لما يحمله من حس إنساني عميق وأسلوب شعري فريد. في هذا القسم، نستعرض أبرز ما قيل
         عنه من كلمات مؤثرة وملهمة من محبيه وزملائه، الذين لمسوا بعبقريته وصدق مشاعره جوهر الأدب والشعر
       </p>
-      <div class="row gy-4 my-4 mt-5 pt-4">
+      <div class="row gy-4 my-4 mt-5 pt-4 testi-row">
         <div class="col-md-4 testi-col">
           <div class="testi">
             <div class="img avatar">
@@ -267,8 +297,8 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center ">
-        <a href="books.html" class="btn main-btn m-auto">المزيد</a>
+      <div class="d-flex justify-content-center align-items-center mt-5">
+        <a href="testimonials.html" class="btn main-btn m-auto">المزيد</a>
       </div>
     </div>
   </section>
@@ -330,33 +360,52 @@
     <div class="container">
       <h2 class="title text-center">معرض الصور</h2>
       <div class="gallery-container my-5">
-        <div class="img">
-          <img src="images/book1.jpg" alt="">
+        <div class="img photo">
+          <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
+            <img src="images/book1.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book2.jpg" alt="">
+        <div class="img photo">
+          <a id="image2" data-fancybox="gallary" href="images/book2.jpg">
+            <img src="images/book2.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book3.jpg" alt="">
+        <div class="img photo">
+          <a id="image3" data-fancybox="gallary" href="images/book3.jpg">
+            <img src="images/book3.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book4.jpg" alt="">
+        <div class="img photo">
+          <a id="image4" data-fancybox="gallary" href="images/book4.jpg">
+            <img src="images/book4.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book1.jpg" alt="">
+        <div class="img photo">
+          <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
+            <img src="images/book1.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book2.jpg" alt="">
+        <div class="img photo">
+          <a id="image2" data-fancybox="gallary" href="images/book2.jpg">
+            <img src="images/book2.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book3.jpg" alt="">
+        <div class="img photo">
+          <a id="image3" data-fancybox="gallary" href="images/book3.jpg">
+            <img src="images/book3.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book4.jpg" alt="">
+        <div class="img photo">
+          <a id="image4" data-fancybox="gallary" href="images/book4.jpg">
+            <img src="images/book4.jpg" alt="">
+          </a>
         </div>
-        <div class="img">
-          <img src="images/book1.jpg" alt="">
+        <div class="img photo">
+          <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
+            <img src="images/book1.jpg" alt="">
+          </a>
         </div>
+
       </div>
       <div class="d-flex justify-content-center align-items-center ">
         <a href="gallery.html" class="btn main-btn m-auto">المزيد</a>
@@ -422,6 +471,8 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- wow script -->
   <script src="js/wow.min.js"></script>
+  <!-- -- fancy box -- -->
+  <script src="js/jquery.fancybox.min.js"></script>
   <!-- swiper script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
