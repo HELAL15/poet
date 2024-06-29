@@ -1,121 +1,114 @@
+$(document).ready(function() {
 
-
-
-$(document).ready(function(){
-
-
+  // Initialize Swiper for quotes
   const qoutes = new Swiper('.qoutes .swiper', {
     slidesPerView: 1,
     spaceBetween: 40,
-
     mousewheel: {
       forceToAxis: true,
     },
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
-
-
-    // Autoplay settings
     autoplay: {
-      delay: 5000, 
-      disableOnInteraction: false, 
+      delay: 5000,
+      disableOnInteraction: false,
     },
-
-
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-next',
       prevEl: '.swiper-prev',
     },
+  });
 
+  // Handle video play and pause controls
+  $('.video-container').each(function() {
+    const video = $(this).find('video').get(0);
+    const videoControls = $(this).find('.video-controls')
+    const playControl = $(this).find('.play-control');
+    const pauseControl = $(this).find('.pause-control');
+
+    playControl.on('click', function() {
+      video.play();
+      videoControls.addClass('active')
+      playControl.hide();
+      pauseControl.show();
+    });
+
+    pauseControl.on('click', function() {
+      video.pause();
+      videoControls.removeClass('active')
+      playControl.show();
+      pauseControl.hide();
+    });
+
+    $(video).on('play', function() {
+      videoControls.addClass('active')
+      playControl.hide();
+      pauseControl.show();
+    });
+
+    $(video).on('pause', function() {
+      videoControls.removeClass('active')
+      playControl.show();
+      pauseControl.hide();
+    });
   });
 
 
 
-    // dir
-    var bodyDir = $('body').css('direction')
-    var dirAr
-    if(bodyDir == "rtl"){
-      dirAr= true
+  document.addEventListener('scroll', function () {
+    const scrollContainer = document.querySelector('.honoring-imgs');
+      const scrollContent = scrollContainer.querySelector('.img');
+
+      const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+
+      const scrollContentHeight = scrollContent.scrollHeight + scrollContainer.clientHeight;
+      scrollContainer.scrollTop = scrollContentHeight * scrollPercentage * 15;
+  });
+  
+
+  // Determine text direction
+  var bodyDir = $('body').css('direction');
+  var dirAr = (bodyDir === "rtl");
+
+  // Fade out loader
+  $('#loading').fadeOut(500);
+
+  // Initialize WOW.js
+  new WOW().init();
+
+  // Initialize niceSelect
+  $('select').niceSelect();
+
+  // Scroll to top button functionality
+  function showScrollTopBtn() {
+    let scroll = $(window).scrollTop();
+    let scrollBtn = $('.scrollTop');
+    if (scroll < 250) {
+      scrollBtn.removeClass('show');
+    } else {
+      scrollBtn.addClass('show');
     }
-    else{
-      dirAr = false
-    }
-
-
-
-    
-    
-    // loader
-    $('#loading').fadeOut(500);
-
-    new WOW().init();
-
-
-
-    $('select').niceSelect();
-
-
-
-
-
-
-
-
-
-
-
-    
-
-function showScrollTopBtn() {
-  let scroll = window.scrollY;
-  let isNavTop = scroll < 250;
-  let scrollBtn = document.querySelector('.scrollTop');
-  if ( isNavTop) {
-    scrollBtn.classList.remove('show');
-    
-  } else {
-    scrollBtn.classList.add('show');
   }
-}
-let scrollBtn = document.querySelector('.scrollTop');
 
-if(scrollBtn != null){
-  window.addEventListener('scroll', showScrollTopBtn);
-  scrollBtn.addEventListener("click", ()=>{
-    window.scrollTo({top:0, left:0 });
-  })
-}
+  let scrollBtn = $('.scrollTop');
+  if (scrollBtn.length) {
+    $(window).on('scroll', showScrollTopBtn);
+    scrollBtn.on('click', function() {
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+  }
 
+  // Commented out navbar toggler functionality
+  // const navToggler = $('#nav-toggler');
+  // const collapse = $('.navbar-collapse');
+  // const close = $('#close');
 
-    // const navToggler = document.getElementById("nav-toggler");
-    // const collapse = document.querySelector(".navbar-collapse");
-    // const close = document.getElementById("close");
+  // close.on('click', function() {
+  //   collapse.removeClass('active');
+  // });
 
-    // close.addEventListener("click" , ()=>{
-    //   collapse.classList.remove("active")
-    // })
+  // navToggler.on('click', function() {
+  //   collapse.toggleClass('active');
+  // });
 
-    // navToggler.addEventListener("click" , ()=>{
-    //   collapse.classList.toggle("active")
-    // })
-
-
-
-
-
-
-
-
-
-
-    //end
 });
-
-
-
-
-
-
-
