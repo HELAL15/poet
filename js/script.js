@@ -54,6 +54,33 @@ $(document).ready(function() {
   });
 
 
+  $(".pause-video").hide()
+  let heroVideo = $(".hero-video video")
+  let click = $(".click")
+
+  click.on("click", () => {
+    let video = heroVideo.get(0);
+    
+    if (video.paused) {
+      video.play();
+      $(".hero-video").addClass("active")
+      $(".play-video").hide()
+      $(".pause-video").show()
+    } else {
+      video.pause();
+      $(".hero-video").removeClass("active")
+      $(".play-video").show()
+      $(".pause-video").hide()
+    }
+  });
+
+
+
+$(".navbar-toggler-menu").on("click",()=>{
+  $(".navbar-collapse").toggleClass("active")
+})
+
+
 
   document.addEventListener('scroll', function () {
     const scrollContainer = document.querySelector('.honoring-imgs');

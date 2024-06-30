@@ -1,8 +1,8 @@
-# HAT-TRICK App Landing Page
+# poet website
 
-source : https://github.com/HELAL15/HAT-TRICK
+source : https://github.com/HELAL15/poet
 
-live-preview : https://hellal.me/HAT-TRICK/
+live-preview : https://hellal.me/poet/
 
 preview-website-img :
 

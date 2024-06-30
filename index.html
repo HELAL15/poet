@@ -23,13 +23,8 @@
   <!-- -- fancy box --  -->
   <link rel="stylesheet" href="styles/plugin/jquery.fancybox.min.css">
   <!-- swiper link -->
-  <!-- swiper link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/plugin/swiper.min.css">
-  <!-- nice select  -->
-  <link rel="stylesheet" href="styles/plugin//nice-select.css">
-  <!-- nice select  -->
-  <link rel="stylesheet" href="styles/plugin//nice-select.css">
   <!-- custom css file link  -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -43,84 +38,91 @@
   <header id="hero">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.svg" alt="logo" class="logo">
+        <a class="navbar-brand" href="index.html">
           <span class="nav-text-logo">فائق عبد الجليل</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex gap-5">
-          <div class="collapse navbar-collapse collapse-navbar" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  عن الشاعر
-                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">السيرة الذاتية</a></li>
-                  <li><a class="dropdown-item" href="#">حياته وعمله</a></li>
-                  <li><a class="dropdown-item" href="#">صور الشاعر</a></li>
-                  <li><a class="dropdown-item" href="#">تكريم الشاعر</a></li>
-                  <li><a class="dropdown-item" href="#">اقوال الشاعر</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  الأعمال
-                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">الأعمال المسرحية</a></li>
-                  <li><a class="dropdown-item" href="#">الأعمال التليفزيونية</a></li>
-                  <li><a class="dropdown-item" href="#">الأعمال الإذاعية</a></li>
-                  <li><a class="dropdown-item" href="#">مستوحاه من قصائد</a></li>
-                  <li><a class="dropdown-item" href="#">الأبوريت</a></li>
-                  <li><a class="dropdown-item" href="#">قصائد مغناه</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  الكتب
-                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">إصدارات الشاعر</a></li>
-                  <li><a class="dropdown-item" href="#">صدرت عن الشاعر</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  الاحتلال العراقي
-                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">الغزو العراقي</a></li>
-                  <li><a class="dropdown-item" href="#">أغاني الإحتلال</a></li>
-                  <li><a class="dropdown-item" href="#">بعض ما قالوا عنه</a></li>
-                  <li><a class="dropdown-item" href="#">العثور على الرفاه</a></li>
-                  <li><a class="dropdown-item" href="#">رسالته الأخيرة لزوجته</a></li>
-                  <li><a class="dropdown-item" href="#">معلومات عن الشاعر</a></li>
-                  <li><a class="dropdown-item" href="#">فيلم حبيب الأرض</a></li>
-                  <li><a class="dropdown-item" href="#">تأبين الشاعر</a></li>
-                  <li><a class="dropdown-item" href="#">قصائد عن الشاعر</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">التواصل</a>
-              </li>
-            </ul>
+        <div class="d-flex align-items-center gap-3 menu-lang-btns">
+          <a href="#" class="lang d-flex align-items-center gap-2 lang">
+            <span>EN</span>
+            <i class="bi bi-globe"></i>
+          </a>
+          <button class="navbar-toggler-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class=" navbar-collapse collapse-navbar  gap-4">
+          <!-- ===== for mobile ======= -->
+          <div class="d-flex d-lg-none justify-content-between align-items-center mb-4 ">
+            <a class="navbar-brand" href="index.html">
+              <span class="nav-text-logo">فائق عبد الجليل</span>
+            </a>
+            <button class="navbar-toggler-menu">
+              <i class="fas fa-close text-white"></i>
+            </button>
           </div>
-          <a href="#" class="lang d-flex align-items-center gap-2">
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                عن الشاعر
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="cv.html">السيرة الذاتية</a></li>
+                <li><a class="dropdown-item" href="his-life.html">حياته وعمله</a></li>
+                <li><a class="dropdown-item" href="gallery.html">صور الشاعر</a></li>
+                <li><a class="dropdown-item" href="honoring.html">تكريم الشاعر</a></li>
+                <li><a class="dropdown-item" href="poet-saying.html">اقوال الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الأعمال
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال المسرحية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال التليفزيونية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال الإذاعية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">مستوحاه من قصائد</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأبوريت</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">قصائد مغناه</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الكتب
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="books.html">إصدارات الشاعر</a></li>
+                <li><a class="dropdown-item" href="books2.html">صدرت عن الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الاحتلال العراقي
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="iraq-invesion.html">الغزو العراقي</a></li>
+                <li><a class="dropdown-item" href="#">أغاني الإحتلال</a></li>
+                <li><a class="dropdown-item" href="testimonials.html">بعض ما قالوا عنه</a></li>
+                <li><a class="dropdown-item" href="#">العثور على الرفاه</a></li>
+                <li><a class="dropdown-item" href="letter.html">رسالته الأخيرة لزوجته</a></li>
+                <li><a class="dropdown-item" href="information.html">معلومات عن الشاعر</a></li>
+                <li><a class="dropdown-item" href="film.html">فيلم حبيب الأرض</a></li>
+                <li><a class="dropdown-item" href="state-funeral.html">تأبين الشاعر</a></li>
+                <li><a class="dropdown-item" href="poems.html">قصائد عن الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">التواصل</a>
+            </li>
+          </ul>
+          <a href="#" class="d-lg-flex d-none align-items-center gap-2 lang">
             <span>EN</span>
             <i class="bi bi-globe"></i>
           </a>
@@ -128,38 +130,40 @@
       </div>
     </nav>
     <section class="hero m-0">
-      <div class="contain h-100">
-        <div class="row gy-4 align-items-center h-100">
-          <div class="col-md-5">
-            <div class="hero-text">
-              <h1 class="hero-title title">الشاعر الاسير فائق عبد الجليل</h1>
-              <p class="hero-intro">برقُ ملجومُ .. يتحدى الغياب</p>
-              <p class="disc">فئق عبدالجليل شاعر كويتي له العديد من الاصدارات الشعرية بالعامية والفصحى وله قصائد غنائية
-                انتشرت على
-                مستوى الوطن العربي</p>
-              <a href="about.html" class="btn main-btn">المزيد</a>
-            </div>
-          </div>
-          <div class="col-md-7 p-0">
-            <div class="img video-hero-svg">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1153.837 1079.975">
-                <path id="_901b53d7a897aca9fbee48d9bd44ef9c" data-name="901b53d7a897aca9fbee48d9bd44ef9c"
-                  d="M0,0H1090S892.579,122.709,892.579,349.847s267.6,374.628,261.143,558.382c1.444,123.315-63.722,171.745-63.722,171.745H0Z"
-                  opacity="0.3" />
-              </svg> -->
-              <img src="images/hero-shape.png" alt="">
-              <div class="video-container">
-                <video autoplay muted loop controls>
-                  <source src="images/vid.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
+      <!-- ==== style ==== -->
+      <div>
+        <img src="images/Subtraction 2.png" alt="">
+        <button class="btn main-btn click click-play">
+          <i class="fas fa-play play-video"></i>
+          <i class="fas fa-pause pause-video"></i>
+        </button>
+      </div>
+
+      <div class="hero-video">
+        <div class="overlay">
+        </div>
+        <div class="video-poster">
+          <img src="images/cover.jpg" alt="">
+        </div>
+        <video>
+          <source src="images/vid.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1 class="hero-title title">الشاعر الاسير فائق عبد الجليل</h1>
+          <p class="hero-intro">برقُ ملجومُ .. يتحدى الغياب</p>
+          <p class="disc">فئق عبدالجليل شاعر كويتي له العديد من الاصدارات الشعرية بالعامية والفصحى وله قصائد غنائية
+            انتشرت على
+            مستوى الوطن العربي</p>
+          <a href="about.html" class="btn main-btn">المزيد</a>
         </div>
       </div>
     </section>
   </header>
+
+
+
 
   <section class="about">
     <div class="container">
@@ -168,11 +172,14 @@
           <div class="text">
             <h2 class="section-title title">عن الشاعر</h2>
             <p>
-              فائق عبدالجليل شاعر كويتي لهُ العديد من الإصدارات الشعرية بالعامية والفصحى ، ولهُ قصائد غنائية انتشرت على
+              فائق عبدالجليل شاعر كويتي لهُ العديد من الإصدارات الشعرية بالعامية والفصحى ، ولهُ قصائد غنائية انتشرت
+              على
               مستوى الوطن العربي، ولد في الكويت في 5 مايو 1948 ، عمل موظفاً في بلدية الكويت ، وقد أشتهر باسم فائق عبد
               الجليل نسبةً لخالهِ الذي تولى رعايته ، بدأ حياته رساما ثم اتجه نحو كتابة الشعر مكتسباً شهرةً ومحبةً
-              واسعةً. أعتُقل خلال فترة الغزو العراقي للكويت عام 1990 من قبل القوات العراقية وهو أشهر أسير حرب لدى حكومة
-              صدام حسين من بين 600 أسير كويتي. منذ تاريخ إعتقاله لم يراه أحد ولم تتوفر القدرة على تحديد مصيره خلال فترة
+              واسعةً. أعتُقل خلال فترة الغزو العراقي للكويت عام 1990 من قبل القوات العراقية وهو أشهر أسير حرب لدى
+              حكومة
+              صدام حسين من بين 600 أسير كويتي. منذ تاريخ إعتقاله لم يراه أحد ولم تتوفر القدرة على تحديد مصيره خلال
+              فترة
               الخمس عشر عاماً من ما منحهُ نصيب الأسد من الشائعات إلى أن عثر على رفاتهِ في أحد المقابر الجماعية للأسرى
               الكويتيين في العراق بعد سقوط حكومة صدام حسين و تم دفنه في الكويت عام 2006.
             </p>
@@ -202,7 +209,8 @@
             <p>
               .ولد الشاعر الشهيد فائق محمد العياضي في الخامس من مايو عام 1948 بمدينة الكويت كان والدهُ موظفاً في وزارة
               الشؤون الاجتماع يعتبر فائق عبد الجليل صاحب مدرسة تجددية في الشعر الحداثي الشعبي فهو شاعر مثقف مجدد يكتب
-              بتلقائية طبيعية وبلغة تشبه لغة الماء وتمتاز قصائده بالثورة الرومانسية وقد أعطت كلماته ملامح جمالية مختلفة
+              بتلقائية طبيعية وبلغة تشبه لغة الماء وتمتاز قصائده بالثورة الرومانسية وقد أعطت كلماته ملامح جمالية
+              مختلفة
               ومميزة للقصيدة والأغنية في منطقة الخليج العربي وأحدثت نقلة جديدة. ترجمت بعض قصائدة إلى اللغة الفرنسية
               ودرّست في بعض الجامعات ونشرت لهُ عدة قصائد في صحيفة لوموند الفرنسية في السبعينيات من القرن العشرين، وقد
               كتب عنهُ في نفس تلك الصحيفة الفرنسية البروفيسور (سيمون جارجي) مستشرق وأستاذ في كلية الآداب في جامعة جنيف
@@ -262,7 +270,8 @@
     <div class="container">
       <h2 class="title text-center">بعض ما قالوا عنه</h2>
       <p class="p-title">
-        لطالما كان الشاعر فائق عبد الجليل رمزًا للإبداع والتأثير في عالم الشعر العربي. خلال مسيرته الأدبية الغنية، أشاد
+        لطالما كان الشاعر فائق عبد الجليل رمزًا للإبداع والتأثير في عالم الشعر العربي. خلال مسيرته الأدبية الغنية،
+        أشاد
         به النقاد والجمهور على حد سواء، لما يحمله من حس إنساني عميق وأسلوب شعري فريد. في هذا القسم، نستعرض أبرز ما قيل
         عنه من كلمات مؤثرة وملهمة من محبيه وزملائه، الذين لمسوا بعبقريته وصدق مشاعره جوهر الأدب والشعر
       </p>
@@ -274,7 +283,8 @@
             </div>
             <h4 class="title">د. سعاد الصباح</h4>
             <p>( الأسر .. و الروح) الأسر يكسر الروح فكيف حين يكون لشاعر؟! فائق عبدالجليل : شاعراً و أسيراً. هذه شهادة
-              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية .
+              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية
+              .
               فائق : نحن بإنتظارك.</p>
           </div>
         </div>
@@ -285,7 +295,8 @@
             </div>
             <h4 class="title">د. سعاد الصباح</h4>
             <p>( الأسر .. و الروح) الأسر يكسر الروح فكيف حين يكون لشاعر؟! فائق عبدالجليل : شاعراً و أسيراً. هذه شهادة
-              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية .
+              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية
+              .
               فائق : نحن بإنتظارك.</p>
           </div>
         </div>
@@ -296,7 +307,8 @@
             </div>
             <h4 class="title">د. سعاد الصباح</h4>
             <p>( الأسر .. و الروح) الأسر يكسر الروح فكيف حين يكون لشاعر؟! فائق عبدالجليل : شاعراً و أسيراً. هذه شهادة
-              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية .
+              له. الشعر يملأ قلوب الطغاة بالرعب ، فليبق شاعرنا أسيراً حتى ينفجر قلب الطاغية فتكون للشاعر و لنا الحرية
+              .
               فائق : نحن بإنتظارك.</p>
           </div>
         </div>
@@ -315,7 +327,7 @@
         <div class="col">
           <div class="book">
             <!-- === shape design and style === -->
-            <img class="book-shape" src="images/book-shape1.svg" alt="">
+            <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
               <img src="images/book1.jpg" alt="">
             </div>
@@ -325,7 +337,7 @@
         <div class="col">
           <div class="book">
             <!-- === shape design and style === -->
-            <img class="book-shape" src="images/book-shape2.svg" alt="">
+            <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
               <img src="images/book2.jpg" alt="">
             </div>
@@ -335,7 +347,7 @@
         <div class="col">
           <div class="book">
             <!-- === shape design and style === -->
-            <img class="book-shape" src="images/book-shape3.svg" alt="">
+            <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
               <img src="images/book3.jpg" alt="">
             </div>
@@ -418,6 +430,9 @@
   </section>
 
 
+
+
+
   <footer>
     <div class="container">
       <div class="row gy-4 footer-bg">
@@ -480,8 +495,6 @@
   <!-- swiper script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <!-- nice select  -->
-  <script src="js/jquery.nice-select.min.js"></script>
   <!-- custom js file link  -->
   <script src="js/script.js"></script>
 
