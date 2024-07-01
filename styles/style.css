@@ -93,7 +93,56 @@ html[dir='rtl'] [type=url] {
 
 
 
+#loading{
+  position: fixed;
+  inset: 0;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999;
+  .loader{
+    -webkit-animation: moveUpDown 1.5s ease-in-out infinite;
+            animation: moveUpDown 1.5s ease-in-out infinite;
+            position: relative;
+            img{
+              position: relative;
+            }
+  }
+}
+#loading .loader::before{
+    content: '';
+    position: absolute;
+    bottom: -3rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 40px; 
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 50%; 
+    -webkit-filter: blur(10px);
+            filter: blur(10px); 
+    z-index: -1;
+}
 
+
+
+  @-webkit-keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
 
 .lang{

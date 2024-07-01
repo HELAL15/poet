@@ -2,10 +2,25 @@ $(document).ready(function() {
   let audio = new Audio('../images/music.mp3');
   // Play the audio
   audio.play();
+
+
+  // Determine text direction
+  var bodyDir = $('body').css('direction');
+  var dirAr = (bodyDir === "rtl");
+
+  // Fade out loader
+  $('#loading').fadeOut(1500);
+
+  // Initialize WOW.js
+  new WOW().init();
+
+
+
   // Initialize Swiper for quotes
   const qoutes = new Swiper('.qoutes .swiper', {
     slidesPerView: 1,
     spaceBetween: 40,
+    dir: dirAr,
     mousewheel: {
       forceToAxis: true,
     },
@@ -26,6 +41,7 @@ $(document).ready(function() {
   const books2 = new Swiper('.books2 .swiper', {
     slidesPerView: 1,
     spaceBetween: 40,
+    dir: dirAr,
     allowTouchMove: false,
     mousewheel: {
       forceToAxis: true,
@@ -124,36 +140,6 @@ $(".navbar-toggler-menu").on("click",()=>{
       scrollContainer.scrollTop = scrollContentHeight * scrollPercentage * 10;
   });
   
-
-  // Determine text direction
-  var bodyDir = $('body').css('direction');
-  var dirAr = (bodyDir === "rtl");
-
-  // Fade out loader
-  $('#loading').fadeOut(500);
-
-  // Initialize WOW.js
-  new WOW().init();
-
-
-  // Scroll to top button functionality
-  function showScrollTopBtn() {
-    let scroll = $(window).scrollTop();
-    let scrollBtn = $('.scrollTop');
-    if (scroll < 250) {
-      scrollBtn.removeClass('show');
-    } else {
-      scrollBtn.addClass('show');
-    }
-  }
-
-  let scrollBtn = $('.scrollTop');
-  if (scrollBtn.length) {
-    $(window).on('scroll', showScrollTopBtn);
-    scrollBtn.on('click', function() {
-      $('html, body').animate({ scrollTop: 0 }, 'slow');
-    });
-  }
 
 
 });
