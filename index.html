@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poet</title>
 
-  <link rel="icon" href="images/fav.svg">
+  <link rel="icon" href="images/logo.svg">
 
   <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -36,7 +36,7 @@
 
 
   <header id="hero">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg wow fadeInUp">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <span class="nav-text-logo">فائق عبد الجليل</span>
@@ -108,9 +108,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="iraq-invesion.html">الغزو العراقي</a></li>
-                <li><a class="dropdown-item" href="#">أغاني الإحتلال</a></li>
+                <li><a class="dropdown-item" href="songs.html">أغاني الإحتلال</a></li>
                 <li><a class="dropdown-item" href="testimonials.html">بعض ما قالوا عنه</a></li>
-                <li><a class="dropdown-item" href="#">العثور على الرفاه</a></li>
+                <li><a class="dropdown-item" href="finding-remains.html">العثور على الرفاه</a></li>
                 <li><a class="dropdown-item" href="letter.html">رسالته الأخيرة لزوجته</a></li>
                 <li><a class="dropdown-item" href="information.html">معلومات عن الشاعر</a></li>
                 <li><a class="dropdown-item" href="film.html">فيلم حبيب الأرض</a></li>
@@ -129,17 +129,23 @@
         </div>
       </div>
     </nav>
-    <section class="hero m-0">
+
+
+    <!-- ====== hero section ======= -->
+    <section class="hero m-0 wow fadeInUp">
       <!-- ==== style ==== -->
-      <div>
-        <img src="images/Subtraction 2.png" alt="">
+      <div class="d-none d-md-block">
+        <!-- ===== for ar dir ===== -->
+        <img src="images/Subtraction 2.png" alt="" class="ar-dir">
+        <!-- ===== for en dir ===== -->
+        <img src="images/Subtraction 3.png" alt="" class="en-dir">
         <button class="btn main-btn click click-play">
           <i class="fas fa-play play-video"></i>
           <i class="fas fa-pause pause-video"></i>
         </button>
       </div>
 
-      <div class="hero-video">
+      <div class="hero-video d-none d-md-block">
         <div class="overlay">
         </div>
         <div class="video-poster">
@@ -168,7 +174,7 @@
   <section class="about">
     <div class="container">
       <div class="row gy-4 align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInUp">
           <div class="text">
             <h2 class="section-title title">عن الشاعر</h2>
             <p>
@@ -186,7 +192,7 @@
             <a href="about.html" class="btn main-btn">المزيد</a>
           </div>
         </div>
-        <div class="col-md-6 about-img">
+        <div class="col-md-6 about-img wow fadeInUp">
           <div class="img">
             <img src="images/about.jpg" alt="">
           </div>
@@ -198,12 +204,12 @@
   <section class="work">
     <div class="container">
       <div class="row gy-4 align-items-center">
-        <div class="col-md-6 work-img">
+        <div class="col-md-6 work-img wow fadeInUp">
           <div class="img">
             <img src="images/work.jpg" alt="">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInUp">
           <div class="text">
             <h2 class="section-title title">حياته وعمله</h2>
             <p>
@@ -238,7 +244,7 @@
       <img src="images/qout-icon.svg" alt="">
       <h2 class="title">من أقوال الشاعر</h2>
     </div>
-    <div class="container position-relative">
+    <div class="container position-relative wow fadeInUp">
       <!-- Slider main container -->
       <div class="swiper py-5 mt-5">
         <!-- Additional required wrapper -->
@@ -268,8 +274,8 @@
 
   <section class="testimonial">
     <div class="container">
-      <h2 class="title text-center">بعض ما قالوا عنه</h2>
-      <p class="p-title">
+      <h2 class="title text-center wow fadeInUp">بعض ما قالوا عنه</h2>
+      <p class="p-title wow fadeInUp">
         لطالما كان الشاعر فائق عبد الجليل رمزًا للإبداع والتأثير في عالم الشعر العربي. خلال مسيرته الأدبية الغنية،
         أشاد
         به النقاد والجمهور على حد سواء، لما يحمله من حس إنساني عميق وأسلوب شعري فريد. في هذا القسم، نستعرض أبرز ما قيل
@@ -277,7 +283,7 @@
       </p>
       <div class="row gy-4 my-4 mt-5 pt-4 testi-row">
         <div class="col-md-4 testi-col">
-          <div class="testi">
+          <div class="testi wow fadeInUp">
             <div class="img avatar">
               <img src="images/book3.jpg" alt="">
             </div>
@@ -289,7 +295,7 @@
           </div>
         </div>
         <div class="col-md-4 testi-col">
-          <div class="testi">
+          <div class="testi wow fadeInUp">
             <div class="img avatar">
               <img src="images/book3.jpg" alt="">
             </div>
@@ -301,7 +307,7 @@
           </div>
         </div>
         <div class="col-md-4 testi-col">
-          <div class="testi">
+          <div class="testi wow fadeInUp">
             <div class="img avatar">
               <img src="images/book3.jpg" alt="">
             </div>
@@ -313,7 +319,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center align-items-center wow fadeInUp">
         <a href="testimonials.html" class="btn main-btn m-auto">المزيد</a>
       </div>
     </div>
@@ -325,7 +331,7 @@
       <h2 class="title text-center">كتب عن الشاعر</h2>
       <div class="row gy-5 row-cols-2 row-cols-md-3 row-cols-lg-4 my-3 ">
         <div class="col">
-          <div class="book">
+          <div class="book wow fadeInUp">
             <!-- === shape design and style === -->
             <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
@@ -335,7 +341,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="book">
+          <div class="book wow fadeInUp">
             <!-- === shape design and style === -->
             <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
@@ -345,7 +351,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="book">
+          <div class="book wow fadeInUp">
             <!-- === shape design and style === -->
             <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
@@ -355,7 +361,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="book">
+          <div class="book wow fadeInUp">
             <!-- === shape design and style === -->
             <img class="book-shape" src="images/book-shape4.svg" alt="">
             <div class="img">
@@ -365,7 +371,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center align-items-center wow fadeInUp">
         <a href="books.html" class="btn main-btn m-auto">المزيد</a>
       </div>
     </div>
@@ -374,56 +380,56 @@
 
   <section class="gallery">
     <div class="container">
-      <h2 class="title text-center">معرض الصور</h2>
+      <h2 class="title text-center wow fadeInUp">معرض الصور</h2>
       <div class="gallery-container my-5">
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
             <img src="images/book1.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image2" data-fancybox="gallary" href="images/book2.jpg">
             <img src="images/book2.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image3" data-fancybox="gallary" href="images/book3.jpg">
             <img src="images/book3.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image4" data-fancybox="gallary" href="images/book4.jpg">
             <img src="images/book4.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
             <img src="images/book1.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image2" data-fancybox="gallary" href="images/book2.jpg">
             <img src="images/book2.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image3" data-fancybox="gallary" href="images/book3.jpg">
             <img src="images/book3.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image4" data-fancybox="gallary" href="images/book4.jpg">
             <img src="images/book4.jpg" alt="">
           </a>
         </div>
-        <div class="img photo">
+        <div class="img photo wow fadeInUp">
           <a id="image1" data-fancybox="gallary" href="images/book1.jpg">
             <img src="images/book1.jpg" alt="">
           </a>
         </div>
 
       </div>
-      <div class="d-flex justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center align-items-center wow fadeInUp">
         <a href="gallery.html" class="btn main-btn m-auto">المزيد</a>
       </div>
     </div>
@@ -433,12 +439,11 @@
 
 
 
-  <footer>
+  <footer class="wow fadeInUp">
     <div class="container">
       <div class="row gy-4 footer-bg">
         <div class="col-md-3">
           <div class="footer-logo">
-            <img src="images/logo.svg" alt="logo" class="logo">
             <span class="nav-text-logo">فائق عبد الجليل</span>
           </div>
           <p>
@@ -450,10 +455,10 @@
           <div class="content">
             <h3 class="title">عن الشاعر</h3>
             <ul>
-              <li><a href="#">حياته وعمله</a></li>
-              <li><a href="#">صور الشاعر</a></li>
-              <li><a href="#">تكريم الشاعر</a></li>
-              <li><a href="#">أقوال الشاعر</a></li>
+              <li><a href="his-life.html" class="active">حياته وعمله</a></li>
+              <li><a href="gallery.html">صور الشاعر</a></li>
+              <li><a href="honoring.html">تكريم الشاعر</a></li>
+              <li><a href="poet-saying.html">أقوال الشاعر</a></li>
             </ul>
           </div>
         </div>
@@ -461,10 +466,10 @@
           <div class="content">
             <h3 class="title">الأعمال</h3>
             <ul>
-              <li><a href="#">أعمال مسرحية</a></li>
-              <li><a href="#">أعمال تليفزيونية</a></li>
-              <li><a href="#">أعمال إذاعية</a></li>
-              <li><a href="#">الأوبريت</a></li>
+              <li><a href="theater-work.html">أعمال مسرحية</a></li>
+              <li><a href="theater-work.html">أعمال تليفزيونية</a></li>
+              <li><a href="theater-work.html">أعمال إذاعية</a></li>
+              <li><a href="theater-work.html">الأوبريت</a></li>
             </ul>
           </div>
         </div>
@@ -472,8 +477,8 @@
           <div class="content">
             <h3 class="title">الكتب</h3>
             <ul>
-              <li><a href="#">اصدارات الشاعر</a></li>
-              <li><a href="#">كتب صدرت عن الشاعر</a></li>
+              <li><a href="books.html">اصدارات الشاعر</a></li>
+              <li><a href="books2.html">كتب صدرت عن الشاعر</a></li>
             </ul>
           </div>
         </div>
