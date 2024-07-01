@@ -15,7 +15,6 @@ $(document).ready(function() {
   new WOW().init();
 
 
-
   // Initialize Swiper for quotes
   const qoutes = new Swiper('.qoutes .swiper', {
     slidesPerView: 1,
