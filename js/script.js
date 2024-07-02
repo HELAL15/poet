@@ -5,7 +5,7 @@ $(document).ready(function() {
   
   let audio = new Audio('../images/music.mp3');
   // Play the audio
-  // audio.play();
+  audio.play();
 
 
   // Determine text direction
