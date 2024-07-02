@@ -1,7 +1,11 @@
+
+
 $(document).ready(function() {
+
+  
   let audio = new Audio('../images/music.mp3');
   // Play the audio
-  audio.play();
+  // audio.play();
 
 
   // Determine text direction
@@ -11,8 +15,11 @@ $(document).ready(function() {
   // Fade out loader
   $('#loading').fadeOut(1500);
 
-  // Initialize WOW.js
-  new WOW().init();
+  AOS.init();
+
+
+
+
 
 
   // Initialize Swiper for quotes
@@ -105,7 +112,7 @@ $(document).ready(function() {
 
   click.on("click", () => {
     let video = heroVideo.get(0);
-    
+    audio.pause();
     if (video.paused) {
       video.play();
       $(".hero-video").addClass("active")

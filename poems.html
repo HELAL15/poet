@@ -19,7 +19,7 @@
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
   <!-- animate link  -->
-  <link rel="stylesheet" href="styles/plugin/animate.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- -- fancy box --  -->
   <link rel="stylesheet" href="styles/plugin/jquery.fancybox.min.css">
   <!-- swiper link -->
@@ -41,7 +41,7 @@
 
 
   <header>
-    <nav class="navbar navbar-expand-lg wow fadeInUp">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <span class="nav-text-logo">فائق عبد الجليل</span>
@@ -66,7 +66,7 @@
           </div>
           <ul class="navbar-nav mb-2 mb-lg-0 gap-1">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#">
@@ -74,7 +74,7 @@
                 <i class="fa-solid fa-chevron-down dropdown-icon"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="cv.html">السيرة الذاتية</a></li>
+                <li><a class="dropdown-item " href="cv.html">السيرة الذاتية</a></li>
                 <li><a class="dropdown-item" href="his-life.html">حياته وعمله</a></li>
                 <li><a class="dropdown-item" href="gallery.html">صور الشاعر</a></li>
                 <li><a class="dropdown-item" href="honoring.html">تكريم الشاعر</a></li>
@@ -119,7 +119,7 @@
                 <li><a class="dropdown-item" href="information.html">معلومات عن الشاعر</a></li>
                 <li><a class="dropdown-item" href="film.html">فيلم حبيب الأرض</a></li>
                 <li><a class="dropdown-item" href="state-funeral.html">تأبين الشاعر</a></li>
-                <li><a class="dropdown-item" href="poems.html">قصائد عن الشاعر</a></li>
+                <li><a class="dropdown-item active" href="poems.html">قصائد عن الشاعر</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -134,7 +134,8 @@
       </div>
     </nav>
 
-    <div class="breadcrumb-container container h-100 d-flex align-items-end wow fadeInUp">
+    <div class="breadcrumb-container container h-100 d-flex align-items-end  " data-aos="fade-down"
+      data-aos-duration="1000">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">
@@ -150,17 +151,17 @@
 
   <section class="sayings poems mt-5">
     <div class="container">
-      <div class="content text-center wow fadeInUp">
-        <p class="mb-5">احمد هلال</p>
-        <p class="mb-5">الامير بدر بن عبد المحسن</p>
-        <p class="mb-5">عبد الرحيم الصديقي</p>
-        <p class="mb-5">مسفر الدوسري</p>
-        <p class="mb-5">احمد هلال</p>
-        <p class="mb-5">علاء اللجابر</p>
-        <p class="mb-5">عدنان الشايجي</p>
-        <p class="mb-5">الياس الفاضل</p>
-        <p class="mb-5">محمد الجلواح</p>
-        <p class="mb-5">احمد هلال</p>
+      <div class="content text-center  ">
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">احمد هلال</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">الامير بدر بن عبد المحسن</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">عبد الرحيم الصديقي</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">مسفر الدوسري</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">احمد هلال</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">علاء اللجابر</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">عدنان الشايجي</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">الياس الفاضل</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">محمد الجلواح</p>
+        <p class="mb-5" data-aos="zoom-in-up" data-aos-duration="1000">احمد هلال</p>
       </div>
     </div>
   </section>
@@ -170,7 +171,7 @@
 
 
 
-  <footer class="wow fadeInUp">
+  <footer class=" " data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
       <div class="row gy-4 footer-bg">
         <div class="col-md-3">
@@ -186,10 +187,10 @@
           <div class="content">
             <h3 class="title">عن الشاعر</h3>
             <ul>
-              <li><a href="#">حياته وعمله</a></li>
-              <li><a href="#">صور الشاعر</a></li>
-              <li><a href="#">تكريم الشاعر</a></li>
-              <li><a href="#">أقوال الشاعر</a></li>
+              <li><a href="his-life.html" class="active">حياته وعمله</a></li>
+              <li><a href="gallery.html">صور الشاعر</a></li>
+              <li><a href="honoring.html">تكريم الشاعر</a></li>
+              <li><a href="poet-saying.html">أقوال الشاعر</a></li>
             </ul>
           </div>
         </div>
@@ -197,10 +198,10 @@
           <div class="content">
             <h3 class="title">الأعمال</h3>
             <ul>
-              <li><a href="#">أعمال مسرحية</a></li>
-              <li><a href="#">أعمال تليفزيونية</a></li>
-              <li><a href="#">أعمال إذاعية</a></li>
-              <li><a href="#">الأوبريت</a></li>
+              <li><a href="theater-work.html">أعمال مسرحية</a></li>
+              <li><a href="theater-work.html">أعمال تليفزيونية</a></li>
+              <li><a href="theater-work.html">أعمال إذاعية</a></li>
+              <li><a href="theater-work.html">الأوبريت</a></li>
             </ul>
           </div>
         </div>
@@ -208,8 +209,8 @@
           <div class="content">
             <h3 class="title">الكتب</h3>
             <ul>
-              <li><a href="#">اصدارات الشاعر</a></li>
-              <li><a href="#">كتب صدرت عن الشاعر</a></li>
+              <li><a href="books.html">اصدارات الشاعر</a></li>
+              <li><a href="books2.html">كتب صدرت عن الشاعر</a></li>
             </ul>
           </div>
         </div>
@@ -224,8 +225,8 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <!-- bootstrap script -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- wow script -->
-  <script src="js/wow.min.js"></script>
+  <!-- -- aos animation script -- -->
+  <script src="js/aos.js"></script>
   <!-- -- fancy box -- -->
   <script src="js/jquery.fancybox.min.js"></script>
   <!-- swiper script -->
