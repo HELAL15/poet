@@ -1,11 +1,25 @@
 
 
-$(document).ready(function() {
 
-  
-  let audio = new Audio('../images/music.mp3');
+$(document).ready(function() {
+  AOS.init();
+
+
+  let audio = document.getElementById('back-sound');
+
+  function playAudio() {
+    if (audio) {
+      audio.play().catch(function(error) {
+        console.log("Audio play failed due to interaction restriction: " + error);
+      });
+    }
+  }
+  $(document).one('click', function() {
+    playAudio();
+  });
+
   // Play the audio
-  audio.play();
+  // audio.play();
 
 
   // Determine text direction
@@ -14,9 +28,6 @@ $(document).ready(function() {
 
   // Fade out loader
   $('#loading').fadeOut(1500);
-
-  AOS.init();
-
 
 
 
@@ -135,16 +146,17 @@ $(".navbar-toggler-menu").on("click",()=>{
 })
 
 
-
-  document.addEventListener('scroll', function () {
-    const scrollContainer = document.querySelector('.honoring-imgs');
-      const scrollContent = scrollContainer.querySelector('.img');
-
-      const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-
-      const scrollContentHeight = scrollContent.scrollHeight + scrollContainer.clientHeight;
-      scrollContainer.scrollTop = scrollContentHeight * scrollPercentage * 10;
-  });
+const scrollContainer = document.querySelector('.honoring-imgs');
+  if (scrollContainer) {
+    const scrollContent = scrollContainer.querySelector('.img');
+    if (scrollContent) {
+      document.addEventListener('scroll', function() {
+        const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+        const scrollContentHeight = scrollContent.scrollHeight + scrollContainer.clientHeight;
+        scrollContainer.scrollTop = scrollContentHeight * scrollPercentage * 10;
+      });
+    }
+  }
   
 
 
