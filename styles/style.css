@@ -222,6 +222,7 @@ span {
 
 p {
   color: var(--paragraph);
+  margin-bottom: .5rem;
 }
 
 
@@ -231,7 +232,7 @@ p {
   font-size: 1rem;
   font-weight: 500;
   color: var(--white);
-  margin: 1rem 0;
+  margin: .5rem 0 0 0;
   border: none;
 }
 
@@ -312,7 +313,7 @@ nav.navbar{
   position: absolute;
   z-index: 99999;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .nav-text-logo{
   font-family: 'diwani' , sans-serif;
@@ -642,11 +643,7 @@ html[dir=ltr]{
   width: 40%;
   margin-top: 4rem;
 }
-@media(max-width:625px){
-  .hero-container .hero-text{
-    width: 100%;
-  }
-}
+
 
 .hero{
   position: relative;
@@ -716,6 +713,31 @@ video{
     transform: scale(1);
   }
 }
+
+
+@media(max-width:625px){
+  .click-play{
+      bottom: 45%;
+      inset-inline-start: 70%;
+  }
+  .hero-container{
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+  .hero-container .hero-text{
+    margin-top: 7rem;
+    width: 100%;
+  }
+  .hero .hero-video {
+    top: unset;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+}
+
+
+
 
 html[dir=ltr]{
   .click-play{

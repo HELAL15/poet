@@ -5,18 +5,18 @@ $(document).ready(function() {
   AOS.init();
 
 
-  let audio = document.getElementById('back-sound');
+  // let audio = document.getElementById('back-sound');
 
-  function playAudio() {
-    if (audio) {
-      audio.play().catch(function(error) {
-        console.log("Audio play failed due to interaction restriction: " + error);
-      });
-    }
-  }
-  $(document).one('click', function() {
-    playAudio();
-  });
+  // function playAudio() {
+  //   if (audio) {
+  //     audio.play().catch(function(error) {
+  //       console.log("Audio play failed due to interaction restriction: " + error);
+  //     });
+  //   }
+  // }
+  // $(document).one('click', function() {
+  //   playAudio();
+  // });
 
   // Play the audio
   // audio.play();
@@ -90,7 +90,7 @@ $(document).ready(function() {
       videoControls.addClass('active')
       playControl.hide();
       pauseControl.css('display', 'flex');
-        audio.pause();
+        // audio.pause();
     });
 
     pauseControl.on('click', function() {
@@ -98,21 +98,21 @@ $(document).ready(function() {
       videoControls.removeClass('active')
       playControl.show();
       pauseControl.hide();
-        audio.play();
+        // audio.play();
     });
 
     $(video).on('play', function() {
       videoControls.addClass('active')
       playControl.hide();
       pauseControl.css('display', 'flex');
-        audio.pause();
+        // audio.pause();
     });
 
     $(video).on('pause', function() {
       videoControls.removeClass('active')
       playControl.show();
       pauseControl.hide();
-        audio.play();
+        // audio.play();
     });
   });
 
@@ -123,19 +123,19 @@ $(document).ready(function() {
 
   click.on("click", () => {
     let video = heroVideo.get(0);
-    audio.pause();
+    // audio.pause();
     if (video.paused) {
       video.play();
       $(".hero-video").addClass("active")
       $(".play-video").hide()
       $(".pause-video").show()
-        audio.pause();
+        // audio.pause();
     } else {
       video.pause();
       $(".hero-video").removeClass("active")
       $(".play-video").show()
       $(".pause-video").hide()
-        audio.play();
+        // audio.play();
     }
   });
 
