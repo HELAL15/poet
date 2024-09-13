@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poet</title>
+
+  <link rel="icon" href="images/logo.svg">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Bootstrap link  -->
+  <!-- if lang == ar -->
+  <link rel="stylesheet" href="styles/plugin/bootstrap.rtl.min.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
+  <!-- animate link  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- -- fancy box --  -->
+  <link rel="stylesheet" href="styles/plugin/jquery.fancybox.min.css">
+  <!-- swiper link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/plugin/swiper.min.css">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div class="loader">
+      <img src="images/logo.svg" alt="">
+    </div>
+  </div>
+
+
+
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="nav-text-logo">فائق عبد الجليل</span>
+        </a>
+        <div class="d-flex align-items-center gap-3 menu-lang-btns">
+          <a href="#" class="lang d-flex align-items-center gap-2 lang">
+            <span>EN</span>
+            <i class="bi bi-globe"></i>
+          </a>
+          <button class="navbar-toggler-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class=" navbar-collapse collapse-navbar  gap-4">
+          <div class="d-flex d-lg-none justify-content-between align-items-center mb-4 ">
+            <a class="navbar-brand" href="index.html">
+              <span class="nav-text-logo">فائق عبد الجليل</span>
+            </a>
+            <button class="navbar-toggler-menu">
+              <i class="fas fa-close text-white"></i>
+            </button>
+          </div>
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                عن الشاعر
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cv.html">السيرة الذاتية</a></li>
+                <li><a class="dropdown-item active" href="his-life.html">حياته وعمله</a></li>
+                <li><a class="dropdown-item" href="gallery.html">صور الشاعر</a></li>
+                <li><a class="dropdown-item" href="honoring.html">تكريم الشاعر</a></li>
+                <li><a class="dropdown-item" href="poet-saying.html">اقوال الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الأعمال
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال المسرحية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال التليفزيونية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأعمال الإذاعية</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">مستوحاه من قصائد</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">الأبوريت</a></li>
+                <li><a class="dropdown-item" href="theater-work.html">قصائد مغناه</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الكتب
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="books.html">إصدارات الشاعر</a></li>
+                <li><a class="dropdown-item" href="books2.html">صدرت عن الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                الاحتلال العراقي
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="iraq-invesion.html">الغزو العراقي</a></li>
+                <li><a class="dropdown-item" href="songs.html">أغاني الإحتلال</a></li>
+                <li><a class="dropdown-item" href="testimonials.html">بعض ما قالوا عنه</a></li>
+                <li><a class="dropdown-item" href="finding-remains.html">العثور على الرفاه</a></li>
+                <li><a class="dropdown-item" href="letter.html">رسالته الأخيرة لزوجته</a></li>
+                <li><a class="dropdown-item" href="information.html">معلومات عن الشاعر</a></li>
+                <li><a class="dropdown-item" href="film.html">فيلم حبيب الأرض</a></li>
+                <li><a class="dropdown-item" href="state-funeral.html">تأبين الشاعر</a></li>
+                <li><a class="dropdown-item" href="poems.html">قصائد عن الشاعر</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">التواصل</a>
+            </li>
+          </ul>
+          <a href="#" class="d-lg-flex d-none align-items-center gap-2 lang">
+            <span>EN</span>
+            <i class="bi bi-globe"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="breadcrumb-container container h-100 d-flex align-items-end  ">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a></li>
+          <li class="breadcrumb-item active title" aria-current="page">حياته وعمله</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="his-life mt-0">
+    <div class="container">
+      <div class="content  " data-aos="zoom-in-down" data-aos-duration="1000">
+        <span class="overlay"></span>
+        <p>
+          .ولد الشاعر الشهيد فائق محمد العياضي في الخامس من مايو عام 1948 بمدينة الكويت كان والدهُ موظفاً في وزارة
+          الشؤون الاجتماع يعتبر فائق عبد الجليل صاحب مدرسة تجددية في الشعر الحداثي الشعبي فهو شاعر مثقف مجدد يكتب
+          بتلقائية طبيعية وبلغة تشبه لغة الماء وتمتاز قصائده بالثورة الرومانسية وقد أعطت كلماته ملامح جمالية مختلفة
+          ومميزة للقصيدة والأغنية في منطقة الخليج العربي وأحدثت نقلة جديدة. ترجمت بعض قصائدة إلى اللغة الفرنسية ودرّست
+          في بعض الجامعات ونشرت لهُ عدة قصائد في صحيفة لوموند الفرنسية في السبعينيات من القرن العشرين، وقد كتب عنهُ في
+          نفس تلك الصحيفة الفرنسية البروفيسور (سيمون جارجي) مستشرق وأستاذ في كلية الآداب في جامعة جنيف بعد أن زار الكويت
+          في الستينيات حيث قال "التصميم على عدم الأنسلاخ من الأرض القديمة التي تتلوى في عروقها جذور حنين الشعراء
+          وعواطفهم ، هو أشد بروزا لدى أصغر شعراء الكويت فائق عبد الجليل وأكثر ما يتمثل صدقهُ .في تعابيرهِ التي هي مزيج
+          من العامية والفصحى". كتب أيضا شعر الأطفال في فترة السبعينيات ونشرت تلك القصائد في (مجلة سعد) وهي مجلة كويتية
+          خاصة بالأطفال وكان مهتما بمسرح الطفل ولهُ عدة أسهامات فيه ، كما كان هو مؤسس مسرح العرائس في الكويت فكانت أول
+          تجربة على الإطلاق في الكويت هي مسرحية (أبو زيد بطل الرويد) ، وهي مسرحية من تأليفهِ وإخراج (أحمد خلوصي) عُرِضَت
+          على مسرح الشامية في العشرين من أغسطس عام 1974 ، وهو عضو جمعية الفنانيين الكويتيين منذ عام 1966 ، وعضو أيضاً في
+          المسرح الكويتي 1967 و الذي شغل فيه منصب نائب رئيس مجلس الإدارة للفترة 1977-1978حيث أصبح فيما بعد رئيس مجلس
+          الإدارة حتى نهايه عام 1983 . كتب مقالات متعددة في الصحافة الكويتية في الستينات و السبعينات و الثمانينات من
+          القرن العشرين منها عمود أسبوعي بعنوان ((سحابه صيف )) و كتب أيضاً عدة أوبريتات غنائية وطنية واجتماعية أشهرها
+          أوبريت بساط الفقر 1980، وكان من بطولة الفنان عبد الحسين عبد الرضا ، أنشد قصائده كبار المطربين من مختلف الدول
+          العربية ومنهم محمد عبده فكانت أشهر أغنياتهِ (أبعاد) التي تُرجمت لعدة لغات ، وغناها عدة مطربون عرب وأجانب وقد
+          تغنى أيضاً بقصائد فائق عبد الجليل عدة مطربين منهم طلال مداح وأبو بكر سالم و عبدالكريم عبدالقادر وعبادي الجوهر
+          وغيرهم و مثّل الكويت في عدة محافل عربية و دولية من خلال امسيات و ندوات و مهرجانات ثقافية و أدبية و فنية .
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="his-story">
+    <div class="container">
+      <div class="row gy-4 stories-wrapper">
+        <div class="col-md-12 story-col  ">
+          <div class="row gy-4 align-items-center">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
+              <div class="images row gy-4">
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 " data-aos="zoom-in-down" data-aos-duration="1000">
+              <div class="content  ">
+                <p>
+                  ولد فائق محمد علي العياضي في مدينة الكويت في الخامس من مايو، العام ثمانية و أربعين عاش فائق بدايات
+                  حياته مع والدته ربة المنزل، ووالده الموظف في وزارة الشؤون الاجتماعية.. ت ثر فائق بشخصية خاله الهي شجعه
+                  على المهالعة واالهتمام بالثقافة واادت.. اختار فائق سماَ مركبا في مسيرته اادبية والشعرية والفنية.. اشتق
+                  نصفه من اسم خاله، وبات اسم فائق عبد الجليل يرافق الشاعر المرهف حتى اليوم الاخير في حياته .
+                </p>
+                <p>
+                  عاش فائق عبد الجليل طفولته وسه انفتا الكويت على محيهها العربي.. كان يقر الكتب والمجلات والصحف، ويههت
+                  مع رفااه إلى دور السينما لمشاهدة الروائع العربية والعالمية.. في وات فراغه كان يرسم اللوحات ويكتت
+                  ااشعار، حتى بد ت شخصيته تتشكل ابل ن يبلغ سن العشرين. هتم فائق في بداياته بقراءة تجارت لشعراء معاصرين
+                  من مثال فدوى هواان ، نسي الحاج ، نازك المالئكة ، عبد البردوني
+                </p>
+                <p>
+                  بدأ فائق عبد الجليل حياته العملية موظفاً في بلدية الكويت وهو العمل الذي استمر فيه حتى أغسطس من العام
+                  تسعين في العام تسعة و ستين شهر يوليو تزوج فائق من شريكة حياته ام فارس، ليبدئ مرحلة جديدة في الحياة .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 story-col  ">
+          <div class="row gy-4 align-items-center">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
+              <div class="images row gy-4">
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 " data-aos="zoom-in-down" data-aos-duration="1000">
+              <div class="content  ">
+                <p>
+                  ولد فائق محمد علي العياضي في مدينة الكويت في الخامس من مايو، العام ثمانية و أربعين عاش فائق بدايات
+                  حياته مع والدته ربة المنزل، ووالده الموظف في وزارة الشؤون الاجتماعية.. ت ثر فائق بشخصية خاله الهي شجعه
+                  على المهالعة واالهتمام بالثقافة واادت.. اختار فائق سماَ مركبا في مسيرته اادبية والشعرية والفنية.. اشتق
+                  نصفه من اسم خاله، وبات اسم فائق عبد الجليل يرافق الشاعر المرهف حتى اليوم الاخير في حياته .
+                </p>
+                <p>
+                  عاش فائق عبد الجليل طفولته وسه انفتا الكويت على محيهها العربي.. كان يقر الكتب والمجلات والصحف، ويههت
+                  مع رفااه إلى دور السينما لمشاهدة الروائع العربية والعالمية.. في وات فراغه كان يرسم اللوحات ويكتت
+                  ااشعار، حتى بد ت شخصيته تتشكل ابل ن يبلغ سن العشرين. هتم فائق في بداياته بقراءة تجارت لشعراء معاصرين
+                  من مثال فدوى هواان ، نسي الحاج ، نازك المالئكة ، عبد البردوني
+                </p>
+                <p>
+                  بدأ فائق عبد الجليل حياته العملية موظفاً في بلدية الكويت وهو العمل الذي استمر فيه حتى أغسطس من العام
+                  تسعين في العام تسعة و ستين شهر يوليو تزوج فائق من شريكة حياته ام فارس، ليبدئ مرحلة جديدة في الحياة .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 story-col  ">
+          <div class="row gy-4 align-items-center">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
+              <div class="images row gy-4">
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-6 img-col  ">
+                  <div class="d-flex flex-column gap-4 gy-4">
+                    <div class="img">
+                      <img src="images/book3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="images/book4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 " data-aos="zoom-in-down" data-aos-duration="1000">
+              <div class="content">
+                <p>
+                  ولد فائق محمد علي العياضي في مدينة الكويت في الخامس من مايو، العام ثمانية و أربعين عاش فائق بدايات
+                  حياته مع والدته ربة المنزل، ووالده الموظف في وزارة الشؤون الاجتماعية.. ت ثر فائق بشخصية خاله الهي شجعه
+                  على المهالعة واالهتمام بالثقافة واادت.. اختار فائق سماَ مركبا في مسيرته اادبية والشعرية والفنية.. اشتق
+                  نصفه من اسم خاله، وبات اسم فائق عبد الجليل يرافق الشاعر المرهف حتى اليوم الاخير في حياته .
+
+                  ولد فائق محمد علي العياضي في مدينة الكويت في الخامس من مايو، العام ثمانية و أربعين عاش فائق بدايات
+                  حياته مع والدته ربة المنزل، ووالده الموظف في وزارة الشؤون الاجتماعية.. ت ثر فائق بشخصية خاله الهي شجعه
+                  على المهالعة واالهتمام بالثقافة واادت.. اختار فائق سماَ مركبا في مسيرته اادبية والشعرية والفنية.. اشتق
+                  نصفه من اسم خاله، وبات اسم فائق عبد الجليل يرافق الشاعر المرهف حتى اليوم الاخير في حياته .
+
+                  عاش فائق عبد الجليل طفولته وسه انفتا الكويت على محيهها العربي.. كان يقر الكتب والمجلات والصحف، ويههت
+                  مع رفااه إلى دور السينما لمشاهدة الروائع العربية والعالمية.. في وات فراغه كان يرسم اللوحات ويكتت
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer class=" " data-aos="fade-down" data-aos-duration="1000">
+    <div class="container">
+      <div class="row gy-4 footer-bg">
+        <div class="col-md-3">
+          <div class="footer-logo">
+            <span class="nav-text-logo">فائق عبد الجليل</span>
+          </div>
+          <p>
+            فائق عبدالجليل شاعر كويتي له العديد من الاصدارات الشعرية بالعامية والفصحى وله قصائد غنائية انتشرت
+            على مستوى الوطن العربي
+          </p>
+        </div>
+        <div class="col-md-3 footer-links">
+          <div class="content">
+            <h3 class="title">عن الشاعر</h3>
+            <ul>
+              <li><a href="his-life.html" class="active">حياته وعمله</a></li>
+              <li><a href="gallery.html">صور الشاعر</a></li>
+              <li><a href="honoring.html">تكريم الشاعر</a></li>
+              <li><a href="poet-saying.html">أقوال الشاعر</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 footer-links">
+          <div class="content">
+            <h3 class="title">الأعمال</h3>
+            <ul>
+              <li><a href="theater-work.html">أعمال مسرحية</a></li>
+              <li><a href="theater-work.html">أعمال تليفزيونية</a></li>
+              <li><a href="theater-work.html">أعمال إذاعية</a></li>
+              <li><a href="theater-work.html">الأوبريت</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 footer-links">
+          <div class="content">
+            <h3 class="title">الكتب</h3>
+            <ul>
+              <li><a href="books.html">اصدارات الشاعر</a></li>
+              <li><a href="books2.html">كتب صدرت عن الشاعر</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- jQuery script -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- -- aos animation script -- -->
+  <script src="js/aos.js"></script>
+  <!-- -- fancy box -- -->
+  <script src="js/jquery.fancybox.min.js"></script>
+  <!-- swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
